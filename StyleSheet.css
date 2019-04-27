@@ -1,0 +1,88 @@
+﻿.container {
+    height: inherit;
+    width: 100vw;
+}
+
+.h3 {
+    color: whitesmoke;
+    font-size: 3vw;
+    width: 100%;
+}
+
+header {
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    height: 15vh;
+    background-color: #303030;
+    padding-top: 3vh;
+}
+
+footer {
+    font-size: 26px;
+    font-family: 'Copperplate Gothic';
+    height: 5vh;
+    width: 100vw;
+    background-color: #303030;
+    color: white;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.measurements {
+    background-color: ghostwhite;
+    height: 44vh;
+    padding-top: 25vh;
+    padding-left: 50vw;
+}
+    .measurements table {
+        background-color: floralwhite;
+        height: 40vh;
+        width: 30vw;
+        box-shadow: 2px 2px 2px 2px gray;
+    }
+
+table tr td {
+    padding-top: 14px;
+}
+
+.menu {
+    margin: 0;
+    padding-top: 5vh;
+    color: white;
+}
+
+.registration {
+    width: 100%;
+    color: white;margin-top:2vh;margin-bottom:1vh;
+}
+
+    .reg1 {
+       box-shadow: 5px 2px 3px 2px #3dd66c;
+        margin-left:50vw;
+        opacity:0.9;
+    }
+    
+    #content {
+    background-image:url(images/content_.png);
+    width:50vw;
+    margin-left:29vw;
+    border:0.1vw solid black;
+  }
+    #content #main { 
+    width:55vw;
+    height:69vh;
+    float: left;
+    font-family:'Times New Roman';font-size-adjust:0.6;
+    //background:url(images/main_.png) no-repeat repeat 100% 0%;
+    }
+    #content #sub { 
+    float: right;
+    background: url(images/sub_.png) no-repeat;  
+    }
+   
+

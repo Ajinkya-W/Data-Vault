@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" CodeFile="~/usermaster.master.vb" Inherits="usermaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Personal Data Vault</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="home" style="background-image: url('/images/index_02.jpg'); background-repeat:no-repeat; background-size:cover;">
+    <form id="form1" runat="server" style="border:none;">
+    <ul class="hide">
+        <li><a href="#body">Skip to content</a></li>
+    </ul>
+    <div id="container">
+        <div id="header">
+            <h1>
+                <asp:Image ID="Image2" runat="server" style="background-color:transparent;" BorderStyle="None" Height="89px" ImageUrl="~/images/logo.png" />
+                <asp:Image ID="Image1" runat="server" BorderStyle="None" Height="75px" ImageUrl="~/images/vault.jpg" />
+                &nbsp;&nbsp; </h1>
+        </div>
+
+        <div id="body">
+            <ul id="nav">
+                <li class="on first"><a href="frontscreen.aspx">User Home page</a></li>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="downfile.aspx">Data Vault</a></li>
+                <li><a href="#">Passwords</a></li>
+                <li><a href="default.aspx">Log Out</a></li>
+
+            </ul><div style="width:100%;">
+            <div>
+                <div class="style2" style="font-family:'Comic Sans MS';color:#eee; text-align:left">Welcome<div style="text-align:right;">
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/default.aspx">Logout</asp:LinkButton>
+            </div></div></div>
+                </div>
+            <div id="content" >
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div id="footer">
+            <p class="left">© 2017</p>
+            <p class="right">Ajinkya Wasnik</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+

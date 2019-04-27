@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Personal Data Vault</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            width: 21px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <header>
+            <div class="h3">Personal Data Vault</div>
+            <div>
+                <asp:LinkButton ID="Button1" runat="server" Text="Home" Width="82px" CssClass="menu" BackColor="#303030" BorderStyle="None" Font-Size="Large" />
+                <asp:LinkButton ID="LinkButton1" runat="server" Text="About us" Width="82px" CssClass="menu" BackColor="#303030" BorderStyle="None"  Font-Size="Large"/>
+                <asp:LinkButton ID="LinkButton2" runat="server" Text="Services" Width="82px" CssClass="menu" BackColor="#303030" BorderStyle="None" Font-Size="Large" />
+                <asp:LinkButton ID="LinkButton3" runat="server" Text="Admin Login"  CssClass="menu" BackColor="#303030" BorderStyle="None"  Font-Size="Large"/>
+                <asp:LinkButton ID="LinkButton4" runat="server" Text="Contact us" Width="82px" CssClass="menu" BackColor="#303030" BorderStyle="None"  Font-Size="Large"/>
+            </div>
+        </header>
+        <div class="container" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         </form>
+        <footer style="top:0;position:relative;">Created By -Ajinkya Wasnik with Vikram</footer>
+   
+</body>
+</html>
